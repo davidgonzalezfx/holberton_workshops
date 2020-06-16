@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+/* Dado un numero de filas en excel, determinar cuáles son pares con el fin de poder hacer un diseño de tablas alternado y entonces
+visualizar de manera más sencilla la información */
 int main()
 {
     int filas = 10;
