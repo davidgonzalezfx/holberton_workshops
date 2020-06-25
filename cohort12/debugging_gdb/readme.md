@@ -1,3 +1,5 @@
+[Revisar en notion](https://www.notion.so/davidgonzalezfx/GDB-d3682b888221465297b0edaf7a370a98)
+
 Debugging:
 Es el proceso que consiste en arreglar 'bugs' o problemas en el código. Se trata de identificar, analizar y resolver errores básicamente. Tiene lugar cuando el código no compila pero tambn si en la ejecución del programa, el comportamiento no es el adecuado.
 
