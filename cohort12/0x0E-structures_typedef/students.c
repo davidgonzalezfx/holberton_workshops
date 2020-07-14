@@ -6,7 +6,12 @@ typedef struct person
     //1. fullName no puede ser vacío
     //2. fullName no puede contener números
     //3. fullName debe contener únicamente 1 nombre y 1 apellido, por ende, solo debe haber un espacio
-    char fullName[30];
+    char name[30];
+
+    //1. fullName no puede ser vacío
+    //2. fullName no puede contener números
+    //3. fullName debe contener únicamente 1 nombre y 1 apellido, por ende, solo debe haber un espacio
+    char lastName[30];
 
     //1. city no puede ser vacío
     //2. city no puede contener números
@@ -20,7 +25,7 @@ typedef struct person
     //1. idType no puede ser vacío
     //2. idType no puede contener números
     //3. idType no puede ir en minúsculas
-    char idType[2];
+    char idType[3];
 
     //1. id no puede ser vacío
     //2. id solo puede contener letras si idType es: PA o CE
