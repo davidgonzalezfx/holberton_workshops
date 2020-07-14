@@ -1,22 +1,35 @@
 #include <stdio.h>
 
 /* Dado un numero de filas en excel, determinar cuáles son pares con el fin de poder hacer un diseño de tablas alternado y entonces
-visualizar de manera más sencilla la información */
+visualizar de manera más sencilla la información. Para ello, vamos a imprimir las filas pares*/
 int main()
 {
-    int filas = 10;
+    // int filas = 20;
+    // int iterador = 0;
 
-    int fila = 0;
+    // while (iterador <= filas)
+    // {
+    //     if (iterador % 2 == 0)
+    //     {
+    //         printf("%d\n", iterador);
+    //     }
 
-    printf("size of filas = %d\n", sizeof(filas));
+    //     iterador++;
+    // }
 
-    while (fila <= filas)
+    int numeroEstudiantes = 10;
+    int estudianteAbuscar = 6;
+    int i;
+
+    for (i = 0; i <= numeroEstudiantes; i++)
     {
-        if (fila % 2 == 0)
+        if (i == estudianteAbuscar || i == 8)
         {
-            printf("la fila %d es par\n", fila);
+            continue;
         }
 
-        fila = fila + 1;
+        printf("revisando score del estudiante %d \n", i);
     }
+
+    return 0;
 }
