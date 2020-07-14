@@ -1,0 +1,43 @@
+Crear un sistema que permita registrar n participantes en un equipo de trabajo/estudio
+
+Cada participante debe tener la siguiente información:
+1. nombre y apellido (únicamente 1 nombre y 1 apellido)
+2. edad
+3. ciudad
+4. tipo de identificación
+5. número de identificación
+
+Se debe tener en cuenta validaciones de negocio como por ejemplo:
+1. edad mayor que cero
+2. si el tipo de identificación es cédula, el número de identificación solo debe contener números
+3. etc
+
+Al final debo obtener la lista de participantes en el siguiente formato:
+
+Equipo: <nombre del equipo>
+Número de participantes: <número de participantes
+Participantes:
+    <nombre del participante>
+    <edad del participante>
+    <tipo de identificación>
+    <número de identificación>
+    ...
+
+----- TIPS:
+
+Para el registro deben hacer uso de scanf:
+https://www.tutorialspoint.com/c_standard_library/c_function_scanf.htm
+
+Deben tomar cada dato por separado y validarlo
+
+Use la estructura:
+
+typedef struct person
+{
+    char name[30];
+	char lastName[30];
+    char city[30];
+    int age;
+    char idType[2];
+    char id[30];
+} student;
