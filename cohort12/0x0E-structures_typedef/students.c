@@ -23,7 +23,7 @@ typedef struct person
     char idType[2];
 
     //1. id no puede ser vacío
-    //2. id no puede contener letras en caso de que idType sea diferente a PA y a CE
+    //2. id solo puede contener letras si idType es: PA o CE
     char id[30];
 
 } student;
@@ -50,6 +50,8 @@ int main()
     {
         printf("Name: %s\tCity: %s\tAge: %d\n", (arr + i)->fullName, (arr + i)->city, (arr + i)->age);
     }
+
+    free(arr);
 
     return 0;
 }
