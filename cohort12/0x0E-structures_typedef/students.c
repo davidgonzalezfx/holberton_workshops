@@ -46,14 +46,14 @@ int main()
     for (i = 0; i < n; ++i)
     {
         printf("Enter first name, city and age of student:\n");
-        scanf("%s %s %d", (arr + i)->fullName, (arr + i)->city, &(arr + i)->age);
+        scanf("%s %s %d", (arr + i)->name, (arr + i)->city, &(arr + i)->age);
     }
 
     printf("\n\nDisplaying Information:\n");
 
     for (i = 0; i < n; ++i)
     {
-        printf("Name: %s\tCity: %s\tAge: %d\n", (arr + i)->fullName, (arr + i)->city, (arr + i)->age);
+        printf("Name: %s\tCity: %s\tAge: %d\n", (arr + i)->name, (arr + i)->city, (arr + i)->age);
     }
 
     free(arr);

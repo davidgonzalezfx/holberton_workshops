@@ -13,6 +13,8 @@ typedef struct person
     char id[30];
 } student;
 
+char *arrIdTypes[] = {"CC", "CE"};
+
 int checkNumbers(char *s)
 {
     while (*s)
@@ -101,41 +103,45 @@ int main()
 
     printf("Enter the team name:\n");
     scanf("%s", teamName);
-    printf("Enter the number of students: ");           
+    printf("Enter the number of students: ");
     scanf("%d", &numStudents);
 
     arrStudents = malloc(numStudents * sizeof(student));
 
-    for (i = 0; i < numStudents ; ++i)
+    for (i = 0; i < numStudents; ++i)
     {
         printf("Enter first name: ");
         scanf("%s", (arrStudents + i)->name);
-        while (validate_strings((arrStudents+i)->name) == 1)
+        while (validate_strings((arrStudents + i)->name) == 1)
         {
             printf("Please type a valid name: ");
             scanf("%s", (arrStudents + i)->name);
         }
+
         printf("Enter last name: ");
         scanf("%s", (arrStudents + i)->lastName);
-        while (validate_strings((arrStudents+i)->lastName) == 1)
+        while (validate_strings((arrStudents + i)->lastName) == 1)
         {
             printf("Please type a valid last name: ");
             scanf("%s", (arrStudents + i)->lastName);
         }
+
         printf("Enter the city: ");
         scanf("%s", (arrStudents + i)->city);
-        while (validate_strings((arrStudents+i)->city) == 1)
+        while (validate_strings((arrStudents + i)->city) == 1)
         {
             printf("Please type a valid city: ");
             scanf("%s", (arrStudents + i)->city);
         }
+
         printf("Enter the age: ");
         scanf("%d", &(arrStudents + i)->age);
-        while (validate_age((arrStudents+i)->age) == 1)
+        while (validate_age((arrStudents + i)->age) == 1)
         {
             printf("Please type a valid age: ");
             scanf("%i", &(arrStudents + i)->age);
         }
+
         printf("Enter the idType: ");
         scanf("%s", (arrStudents + i)->idType);
         while (validate_idType((arrStudents + i)->idType) == 1)
@@ -144,6 +150,7 @@ int main()
             printf("Please type a valid idType: ");
             scanf("%s", (arrStudents + i)->idType);
         }
+
         printf("Enter ID: ");
         scanf("%s", (arrStudents + i)->id);
         while (validate_id((arrStudents + i)->idType, (arrStudents + i)->id) == 1)
